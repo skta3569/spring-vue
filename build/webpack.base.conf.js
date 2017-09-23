@@ -31,7 +31,7 @@ module.exports = {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
-        include: [resolve('src/main/javascript'), resolve('test')],
+        include: [resolve('src/main/javascript'), resolve('src/test/javascript')],
         options: {
           formatter: require('eslint-friendly-formatter')
         }
@@ -44,7 +44,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src/main/javascript'), resolve('test')]
+        include: [resolve('src/main/javascript'), resolve('src/test/javascript')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
