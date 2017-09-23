@@ -8,6 +8,7 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
+	"postinstall": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start src/test/javascript/unit/karma.conf.js --single-run",
     "e2e": "node src/test/javascript/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
